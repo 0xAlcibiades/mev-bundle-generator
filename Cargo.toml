@@ -1,0 +1,26 @@
+[package]
+name = "bundle-generator"
+version = "0.1.0"
+authors = ["0xAlcibiades"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.39"
+async-trait = "0.1.50"
+bigdecimal = "0.2.0"
+chrono = "0.4.19"
+env_logger = "0.8.4"
+futures = "0.3.16"
+hex = "0.4.3"
+log = "0.4.14"
+num-bigint = { version = "0.3.0", features = ["rand"] }
+petgraph = "0.6.0"
+rayon = "1.5.1"
+secp256k1 = "0.20.2"
+serde_json = "1.0.64"
+surf = { version = "2.0.0", features = ["h1-client"] }
+tiny-keccak = { version = "2.0.0", features = ["keccak"] }
+tokio = { version = "1.6", features = ["macros", "rt-multi-thread"] }
+web3 = { version = "0.16.0", features = ["signing", "ws-tokio"]}
